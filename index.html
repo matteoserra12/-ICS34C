@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <style>
+        
+        body {
+            background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+        }
+        .header{
+            height: 50px;
+            width: 100%;
+            padding-left: 5px;
+            background-color: black;
+            border-radius: 9px;
+            text-align: center; 
+            color: #fff;
+            
+            display: flex;
+            align-items: center;
+    }
+
+    .header img {
+        margin-right: 10px; 
+    }
+    
+    .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+      font-size: 40px;
+  font-family: "Helvetica Neue", sans-serif;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+  .container-wrapper {
+    left: 50%
+}
+
+.container1 {
+   
+    width: 500px;
+    height: 200px;
+    left: 50%;
+}
+
+.container {
+   
+   width: 500px;
+   height: 200px;
+  
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container h2 {
+    margin: 10px 0;
+}
+
+.balenace {
+    float: right;
+}        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./images/chip.png" style="width:60px;height:60px;">
+        <h1 class="neonText">Casino</h1>
+    </div>
+    <br>
+    <div class="container1" onclick="window.location.href='coinflip.html'">
+        <img src="./images/coinflip.jpg" alt="Image 1">
+       
+    </div>
+    <br>
+    <div class="container" onclick="window.location.href='dice.html'">
+        <img src="./images/dice.jpg" alt="Image 2">
+    
+    </div>
+    <br>
+    <div class="container" onclick="window.location.href='crash.html'">
+        <img src="./images/crash.jpg" alt="Image 3">
+        
+    </div>
+    <br>
+    <div class="container" onclick="window.location.href='mines.html'">
+        <img src="./images/mines.jpg" alt="Image 4">
+       
+    </div>
+</body>
+</html>

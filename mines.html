@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <style>
+        body {
+            background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+        }
+        .header{
+            height: 50px;
+            width: 100%;
+            padding-left: 5px;
+            background-color: black;
+            border-radius: 9px;
+            text-align: center; 
+            color: #fff;
+            
+            display: flex;
+            align-items: center;
+    }
+
+    .header img {
+        margin-right: 10px; 
+    }
+    
+    .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+      font-size: 40px;
+  font-family: "Helvetica Neue", sans-serif;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+ 
+  
+
+  
+.coin-container { 
+    background-image: url("crashback.jpeg"); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px
+        rgba(0, 0, 0, 0.2); 
+    height: 650px;
+    width: 40%;
+    margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+} 
+  
+
+  
+h2 { 
+    color: #333; 
+    font-size: 24px; 
+    margin: 10px 0; 
+} 
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./images/chip.png" style="width:60px;height:60px;">
+        <h1 class="neonText">Casino</h1>
+    </div>
+    <div class="coin-container"> 
+     
+        
+       
+       
+    </div> 
+    
+    
+
+
+</body>
+</html>
